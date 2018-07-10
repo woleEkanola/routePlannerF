@@ -1,0 +1,476 @@
+
+/* 
+    TABLE OF CONTENTS
+    ========================================================================= */
+/*      1. CSS RESET
+        2. DOCUMENT STYLES
+        3. TYPOGRAPHY 
+        4. HEADER 
+        5. PAGE TITLES 
+        6. CUSTOM SECTION BACKGROUNDS
+        7. ELEMENTS
+            7.1. ACCORDION
+            7.2. BLOCKQUOTE
+            7.3. BUTTONS
+            7.4. CALL TO ACTION
+            7.5. CLIENT CAROUSEL
+            7.6. CLIENT LIST
+            7.7. COMPANY TIMELINE
+            7.8. CUSTOM HEADING
+            7.9. CUSTOM HEADING02 - CENTERED WITH SUBTITLE
+            7.10. DRIVER APPLICATION
+            7.11. EVENTS
+            7.12. INTRO TITLE
+            7.13. LATEST POSTS STYLE 01
+            7.14. LATEST POSTS STYLE 02
+            7.15. LATEST POSTS STYLE 03
+            7.16. LIST WITH ICONS
+            7.17. NUMBERS COUNTER
+            7.18. PROMO BOXES
+            7.19. SERVICES FEATURE BOX
+            7.20. SERVICES GALLERY
+            7.21. SERVICE ICON CENTER
+            7.22. SERVICE ICON CENTER BOXED
+            7.23. SERVICES ICON LEFT 
+            7.24. SERVICES ICON LEFT BOXED
+            7.25. SERVICE LIST - small icons and text
+            7.26. SERVICES LIST BIG ICONS 
+            7.27. SERVICES LIST BIG ICONS + DETAILS (text)
+            7.28. SHIPPING QUOTE FORM
+            7.29. SLIDER - MASTER SLIDER
+            7.30. STATEMENT ELEMENT
+            7.31. TABLE 
+            7.32. TABS
+            7.33. TEAM MEMBERS
+            7.34. TEAM MEMBERS LIST
+            7.35. TESTIMONIAL
+            7.36. TRACKING FORM
+            7.37. VEHICLE GALLERY FULL
+        8. HOME MINIMAL CUSTOM STYLES
+        9. BLOG
+        10. LOCATIONS PAGE
+        11. CONTACT
+        12. WIDGETS
+        13. FOOTER
+*/
+
+/* 
+    1. CEE RESET 
+----------------------------------------------------------------------------- */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*:focus {
+    outline: 0;
+    text-decoration: none;
+}
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: 0;
+}
+
+/* ==========================================================================
+    2. DOCUMENT STYLES
+    ========================================================================= */
+html{
+  font-family:sans-serif;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    color: #777;
+    background-color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+/* ==========================================================================
+    3. TYPOGRAPHY 
+    ========================================================================= */
+p,
+a,
+span {
+    color: #777;
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 22px;
+}
+p {
+    padding-bottom: 15px;
+}
+a {
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Varela Round', Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: #333;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 26px;
+}
+
+h3{
+    font-size: 21px;
+    line-height: 24px;
+}
+
+h4{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h5{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+h6{
+    font-size: 15px;
+    line-height: 18px;
+}
+
+strong{
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+img.float-left {
+    float: left;
+    margin: 12px 12px 12px 0;
+}
+img.float-right {
+    float: right;
+    margin: 12px 0px 12px 12px;
+}
+
+.img-fixed-bottom{
+    position: relative;
+    bottom: -70px;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+ul li,
+ol li {
+    padding-bottom: 5px;
+}
+
+blockquote + p {
+    margin-top: 15px;
+}
+
+.required{
+    color: #ce292d;
+}
+
+.text-big{
+    font-size: 18px;
+    line-height: 25px;
+    color: #333;
+}
+
+.align-right{
+    text-align: right;
+}
+
+a.read-more{
+    float: right;
+    position: relative;
+}
+
+a.read-more span{
+    text-transform: uppercase;
+    font-weight: 700;  
+    display: block;
+
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+a.read-more:hover span{
+    transform: translate(-15px, 0);
+    -webkit-transform: translate(-15px, 0);
+    -moz-transform: translate(-15px, 0);
+    -ms-transform: translate(-15px, 0);
+}
+
+a.read-more i{
+    font-size: 11px;
+    line-height: 20px;
+    opacity: 0;
+
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+a.read-more:hover i{
+    opacity: 1;   
+}
+
+a.download-link{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+a.download-link span {
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+a.download-link span i{
+    padding-right: 5px;
+}
+
+.mb-70{
+    margin-bottom: 70px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-0{
+    margin-bottom: 0;
+}
+
+.svg-white .st0{
+    fill: #fff;
+}
+
+
+
+/* ==========================================================================
+    4. HEADER 
+    ========================================================================= */
+
+    .dispatch-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+   .dispatch-header-wrap {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 7px;
+    height: 7vh;
+    }
+
+    .dispatch-map-wrap{
+        background: #ccc;
+        display: flex;
+        width: 100%;
+        height: 60vh;
+
+    }
+
+    .dispatch-timeline-wrap{
+    background: #ccc;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 1px 6px #e8e8e8;
+    height: auto;
+
+    }
+    .toggleTimeline{
+        position: fixed;
+        bottom:0;
+        right:0;
+        background: #f5f5f5;
+        width: 70px;
+        box-shadow: 2px 3px 4px #ccc;
+        border-radius: 25px;
+        color: #000;
+        margin: 50px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .toggleTimeline:hover{
+        color: #fff;
+        background: #777;
+    }
+
+    .sidebar{
+        background: #f5f5f5;
+        width: 30vw;
+        height: 60vh;
+        position: fixed;
+        top: 0;
+        right:0;
+        margin-right: -500px;
+        transition: margin-right 550ms ease-in-out 200ms;
+      
+    }
+    .sidebar div{
+        background: #ccc;
+        padding: 10px;
+    }
+    .sidebar p{
+        margin-left: 20px
+    }
+    .slideIn{
+        margin-right: 0px
+    }
