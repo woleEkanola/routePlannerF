@@ -10,7 +10,8 @@
       dataTable.addColumn({ type: 'date', id: 'Start' });
       dataTable.addColumn({ type: 'date', id: 'End' });
       dataTable.addRows(columns);
-
+     
+      google.visualization.events.addListener(chart, 'onmouseover', hoverHandler.bind(this));
       
       var options = {
         timeline: { colorByRowLabel: true, groupByRowLabel: true },
@@ -19,4 +20,8 @@
       };
 
       chart.draw(dataTable, options);
+    }
+    function  hoverHandler(e){
+        checkTab(1)
+
     }

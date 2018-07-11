@@ -32,6 +32,11 @@ const drivers= [
             },
 
         ],
+        routeCords: [
+            { lat: 6.5536, lng: 3.3567 },
+            { lat: 6.2536, lng: 3.3267 },
+            { lat: 6.8536, lng: 3.4567 }
+        ],
         timeline: [
             {
                 start: new Date(0, 0, 0, 8, 30, 0),
@@ -87,6 +92,12 @@ const drivers= [
             },
 
         ],
+        routeCords: [
+            { lat: 6.296, lng: 3.4567 },
+            { lat: 6.9536, lng: 3.2267 },
+            { lat: 6.1536, lng: 3.3567 }
+        ],
+
         timeline: [
             {
                 start: new Date(0, 0, 0, 8, 30, 0),
@@ -123,8 +134,8 @@ var routeNum= i + 1
 t.push(routeNum.toString())
 t.push(dr.timeline[i].start)
 t.push(dr.timeline[i].stop)
+
 columns.push(t)
     }
 })
 
-console.log(columns)

@@ -131,35 +131,14 @@
           marker.addListener('click', toggleBounce);
   
         }
-  var icon = 'https://firebasestorage.googleapis.com/v0/b/reacttenuapp.appspot.com/o/customer.svg?alt=media&token=cf0a5610-3bf9-4933-83d9-a022aefaffad'
-        var markers = [
-          {
-            coords: { lat: 6.5536, lng: 3.3567 },
-            content: `<h4>Lasissi</h4>`,
-            iconImage: icon        },
-          {
-            coords: { lat: 6.4926, lng: 3.3490 },
-            iconImage: icon        },
-          {
-            coords: { lat: 6.5095, lng: 3.3711 },
-            iconImage: icon
   
-          },
-          {
-            coords: { lat: 6.5381, lng: 3.3213 },
-            iconImage: icon
-          }
   
-        ]
-  
-         const markersWithLabels = markers.map((marks, index)=>{
-           return {
-             ...marks,
-             label:(index + 1).toString()
-           }
-        })
+     
   
   drivers.map(dr=>{
+     
+
+      
     for(var i =0; i < dr.routes.length; i++){
         addMarker(dr.routes[i]);
       }

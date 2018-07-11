@@ -36,3 +36,13 @@ let sidebarContent =  `
 infoTab.innerHTML= sidebarContent
 infoTab.classList.add('slideIn')
 }
+
+var checkTab = function(x){
+let targetDriver = columns[x]
+let targetMarker = drivers.filter(driver=>{
+    console.log(driver)
+    console.log(driver.name == targetDriver[0]  && driver.routes[x].label == x)
+    return driver.name == targetDriver[0] 
+})
+console.log(targetMarker)
+}
